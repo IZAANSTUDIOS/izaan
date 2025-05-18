@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA 7 - Izaan's Game Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('gtalogo.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      animation: slideDown 1.2s ease;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 44px;
+      text-shadow: 2px 2px 10px black;
+      color: #00ffe7;
+      letter-spacing: 2px;
+    }
+    .section {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      backdrop-filter: blur(12px);
+      background: rgba(0, 0, 0, 0.6);
+      margin: 60px auto;
+      padding: 50px;
+      max-width: 1000px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: fadeInUp 1.2s forwards;
+    }
+    .section img {
+      width: 140px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+    .text-content {
+      flex: 1;
+    }
+    h2 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #29abe2;
+      text-shadow: 1px 1px 5px #000;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.9;
+      margin-bottom: 20px;
+      color: #e0f7ff;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media screen and (max-width: 768px) {
+      .section { flex-direction: column; text-align: center; padding: 30px; }
+      .section img { margin-bottom: 20px; }
+      header h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GTA 7 - Izaan's Game Hub</h1>
+  </header>
+  <div class="section">
+    <img src="images/gta_logo.jpg" alt="GTA 7 Logo">
+    <div class="text-content">
+      <h2>GTA 7 - The Next Generation of Open World</h2>
+      <p>
+        New features include AI gangs that fight for power, cyber hacking tools, custom vehicles with rocket boosters,
+        and online multiplayer missions with friends. Are you ready to become the legend of Los Vortex?
+      </p>
+      <p>
+        The game is in under devlopment it will be avialable soon. You can see our progress below
+      </p>
+    </div>
+  </div>
+  <div class="gallery">
+    <img src="images/gta1.jpg" alt="GTA 1">
+    <img src="images/gta2.jpg" alt="GTA 2">
+    <img src="images/gta3.jpg" alt="GTA 3">
+    <img src="images/gta4.jpg" alt="GTA 4">
+    <img src="images/gta5.jpg" alt="GTA 5">
+    <img src="images/gta6.jpg" alt="GTA 6">
+    <img src="images/gta7.jpg" alt="GTA 7">
+    <img src="images/gta8.jpg" alt="GTA 8">
+    <img src="images/gta9.jpg" alt="GTA 9">
+    <img src="images/gta10.jpg" alt="GTA 10">
+    <img src="images/gta11.jpg" alt="GTA 11">
+  </div>
+</body>
+</html>
